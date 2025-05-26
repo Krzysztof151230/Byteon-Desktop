@@ -1,1 +1,278 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byteon: Get our wallpapers for free!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.py">
+</head>
+<body>
+    <div class="container">
+        <div class="header animate__animated animate__fadeInDown">
+            <header>
+                <img src="logo.png" alt="logo" style="height: 50px;">
+                <hr>
+                <a href="https://www.youtube.com/@Byteon_Desktop"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.gg/ttAVC2Ex"><i class="fa-brands fa-discord"></i></a>
+            </header>
+        </div>
+        <div class="wallpaper-page">
+            <div class="header-1">
+                <h1 class="animate__animated animate__fadeInDown" style="text-align: center; color: #461285; font-size: 72px; margin-top: 100px;">Wallpapers are finally here!</h1>
+                <p class="animate__animated animate__fadeInUp" style="text-align: center; color: #4c4c4c; font-size: 24px; margin-top: 20px;">You can now download wallpapers for your desktop or tablet. 100% FREE.</p>
+                <p class="animate__animated animate__fadeInUp" style="text-align: center; color: #868686; font-size: 20px; margin-top: 20px; padding-left: 100px; padding-right: 100px;">To download the wallpaper you want to download, click the "View" button below the wallpaer. If you're on the PC, right-click the wallpaper, then click "Save" or "Save as", if you want to save the wallpaper to another path. If you're on a mobile device, press and hold on the wallpaper, then press "Save".</p>
+                <button class="animate__animated animate__fadeInUp btn-9"><a href="#wallpapers">Click to scroll</a></button>
+                <hr class="animate__animated animate__fadeInUp" style="margin-top: 50px;">
+            </div>
+            <div class="wallpapers" id="wallpapers">
+                <div class="wlp-1">
+                    <img src="Wallpaper/Light/byteon-wbl.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-1">View Light Blue</button>
+                </div>
+                <div class="wlp-2">
+                    <img src="Wallpaper/Dark/byteon-wbd.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-2">View Dark Blue</button> 
+                </div>
+                <div class="wlp-3">
+                    <img src="Wallpaper/Light/byteon-wgl.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-3">View Light Green</button> 
+                </div>
+                <div class="wlp-4">
+                    <img src="Wallpaper/Dark/byteon-wgd.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-4">View Dark Green</button>
+                </div>
+                <div class="wlp-5">
+                    <img src="Wallpaper/Light/byteon-wpl.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-5">View Light Purple</button>
+                </div>
+                <div class="wlp-6">
+                    <img src="Wallpaper/Dark/byteon-wpd.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-6">View Dark Purple</button>
+                </div>
+                <div class="wlp-7">
+                    <img src="Wallpaper/Light/byteon-wrl.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-7">View Light Red</button>
+                </div>
+                <div class="wlp-8">
+                    <img src="Wallpaper/Dark/byteon-wrd.png" style="height: 300px; margin-top: 100px; margin-left: 100px; margin-right: 100px;">
+                    <br>
+                    <button id="btn-8">View Dark Red</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="text-align: center; color: #ffffff; font-size: 16px;">Made with ❤️ by Byteon Team</p>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        background: linear-gradient(#fffbff, #ba76ff);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: "Figtree", sans-serif;
+        font-family: 200;
+        font-style: normal;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 2444px;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: rgb(240, 225, 255);
+        box-shadow: 0 12px 24px rgba(132, 0, 255, 0.332);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header:hover {
+        background-color: #f0e1ff;
+        box-shadow: 0 16px 32px rgba(198, 137, 255, 0.5);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    header p {
+        display: flex;
+        justify-content: center;
+    }
+
+    header hr {
+        width: 100%;
+        height: 1px;
+        background-color: #ccc4d5;
+        border: none;
+        margin: 10px 0;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #5d099e;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    header a:hover {
+        color: #ef85ff;
+        transition: color 0.3s ease;
+    }
+
+    header i {
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    header i:hover {
+        transform: scale(1.2);
+    }
+
+    .wallpapers {
+        text-align: center;
+        padding: 50px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wallpapers img {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(52, 0, 100, 0.332);
+    }
+
+    .wallpapers button {
+        background-color: #7110e8;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .wallpapers button:hover {
+        background-color: #dd00ff;
+        transition: background-color 0.3s ease;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #393939;
+        color: white;
+        box-shadow: 0 -4px 8px rgba(52, 0, 100, 0.332);
+        border-radius: 8px;
+        margin-top: 50px;
+    }
+
+    .footer p {
+        margin: 5px 0;
+        color: #4c4c4c;
+    }
+
+    .header-1 {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-family: "Figtree", sans-serif;
+        font-weight: 600;
+    }
+
+    .btn-9 {
+        background-color: #6e16da;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-9 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn-9:hover {
+        background-color: #a00aff;
+        transition: background-color 0.3s ease;
+    }
+
+    .wlp-1, .wlp-2, .wlp-3, .wlp-4, .wlp-5, .wlp-6, .wlp-7, .wlp-8 {
+        margin: 20px;
+        text-align: center;
+        border-radius: 15px;
+    }
+</style>
+
+<script>
+    document.getElementById("btn-1").addEventListener("click", function() {
+        window.open("Wallpaper/Light/byteon-wbl.png", "_blank");
+    });
+    document.getElementById("btn-2").addEventListener("click", function() {
+        window.open("Wallpaper/Dark/byteon-wbd.png", "_blank");
+    });
+    document.getElementById("btn-3").addEventListener("click", function() {
+        window.open("Wallpaper/Light/byteon-wgl.png", "_blank");
+    });
+    document.getElementById("btn-4").addEventListener("click", function() {
+        window.open("Wallpaper/Dark/byteon-wgd.png", "_blank");
+    });
+    document.getElementById("btn-5").addEventListener("click", function() {
+        window.open("Wallpaper/Light/byteon-wpl.png", "_blank");
+    });
+    document.getElementById("btn-6").addEventListener("click", function() {
+        window.open("Wallpaper/Dark/byteon-wpd.png", "_blank");
+    });
+    document.getElementById("btn-7").addEventListener("click", function() {
+        window.open("Wallpaper/Light/byteon-wrl.png", "_blank");
+    });
+    document.getElementById("btn-8").addEventListener("click", function() {
+        window.open("Wallpaper/Dark/byteon-wrd.png", "_blank");
+    });
+    document.getElementById("btn-8").addEventListener("click", function() {
+        go.to("#wallpapers", "_self");
+    });
+</script>
+
+</html>
